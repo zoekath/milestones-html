@@ -15,10 +15,14 @@
   - [Publishing HTML](#Publishing-HTML)
 - [HTML Fundamentals](#HTML-Fundamentals)
   - [Basic Structure](#Basic-Structure)
+  - [The Anatomy of an HTML Tag](#The-Anatomy-of-an-HTML-Tag)
   - [Basic Tags](#Basic-Tags)
   - [Lists](#Lists)
   - [Tables](#Tables)
-  - [CSS](#CSS)
+  - [Multimedia](#Multimedia)
+- [CSS](#CSS)
+  - [Identifying CSS](#Identifying-CSS)
+  - [Styling A Page](#Styling-A-Page)
   - [Semantic HTML and Logical Structure](#Semantic-HTML-and-Logical-Structure)
   - [Common Page Features and Layouts](#Common-Page-Features-and-Layouts)
   - [Responsive Design](#Responsive-Design)
@@ -63,6 +67,7 @@ You should be able to...
 
 ## HTML Fundamentals
 
+
 ### Basic Structure
 
 Let's make sure we have the basic structure of an HTML page down. Don't worry too much about the content, here.
@@ -79,11 +84,33 @@ You should be able to create a file called `structure.html` that contains the fo
     - [ ] A second-level `<h2>` tag
     - [ ] A few more paragraphs of text in `<p>` tags
 
+### The Anatomy of an HTML Tag
+
+You should be able to create a properly structured HTML document named `snippet.html` that talks about the following snippet:
+
+```html
+<p>
+  Want to search the web?
+  Try <a href="https://google.com" id="the-best-link" class="banana"  target="_blank">Google</a>!
+</p>
+```
+
+In `snippet.html`, you should be able to:
+
+- [ ] Name the tags in the snippet
+- [ ] Link to 2-3 online references that describe each tag, give examples, etc.
+- [ ] Describe the relationship between the tags in terms of nesting ("X is a child of Y")
+- [ ] Explain the relationship between `<p>` and `</p>`
+- [ ] Explain the relationship between `<a>` and `</a>`
+- [ ] List the attribute names on the `<a>` tag
+- [ ] For each attribute on the `<a>` tag, name its value
+- [ ] For each attribute/value pair on the `<a>` tag, describe its purpose and effect
+
 ### Basic Tags
 
 Using a single-column layout, create a page called `basic-tags.html` that contains the following sections. There should be a single `<h1>` tag for the entire page and a single `<h2>` tag for each section.
 
-Each section should be contained in its own `<section>` tag.
+Each section should be contained in its own `<section>` tag. Do not use any CSS to style the appearance of the page. Focus just on the HTML. We will create a styled copy later that we can compare side-by-side with the unstyled copy.
 
 You should be able to create sections that demonstrate...
 
@@ -101,10 +128,12 @@ You should be able to create sections that demonstrate...
 
 ### Lists
 
-Building on `basic-tags.html`, you should be able to demonstrate the two main types of lists:
+Building on `basic-tags.html`, you should be able to do the following:
 
-- [ ] The unordered `<ul>` list
-- [ ] The ordered `<ol>` list
+- [ ] Create multiple unordered lists using the `<ul>` and `<li>` tags
+- [ ] Create multuple ordered lists using the `<ol>` and `<li>` tags
+- [ ] Include other HTML inside the list item (`<li>`) tags, e.g., paragraphs, images, links, etc.
+- [ ] Nest lists within each other
 
 ### Tables
 
@@ -114,9 +143,35 @@ Building on `basic-tags.html`, you should be able to create tables of varying si
 - [ ] Add headings using the `<th>` tag
 - [ ] Create two more tables of different dimensions
 
-### CSS
+### Multimedia
 
-Common selectors + properties
+Create a page named `multimedia.html` in which you:
+
+- [ ] Use the `<video>` tag to embed one or more videos
+- [ ] Use the `<audio>` tag to embed one or more audio clips
+
+## CSS
+
+### Identifying CSS
+
+You should be able to create a page called `selectors.html` that demonstrates the following by using a `<style>` tag to include the CSS:
+
+- [ ] Selectors...
+  - [ ] Type / tag selectors
+  - [ ] Class selectors
+  - [ ] ID selectors
+- [ ] Combinators...
+  - [ ] Descendant combinator
+  - [ ] Child combinator
+
+### Styling A Page
+
+You should be able to create a copy of `basic-tags.html` called `basic-tags-styles.html` and do the following:
+
+1. Give each section its own distinct `id`
+1. Use a class selector to change the color of some (but not all) of the text on the page. You will need to add `class` attributes to various elements.
+1. Change the text color of the `<h2>` header in the first section using an id selector, tag selector, and child combinator
+1. Add borders to some (but not all) of the sections. Consider giving the sections you want to have borders the same `class` attribute and then using a class selector.
 
 ### Semantic HTML and Logical Structure
 
