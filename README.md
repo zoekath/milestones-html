@@ -63,8 +63,6 @@ Here are some more reference-like resources. These might be slightly technical, 
 
 - MDN's [HTML: Hypertext Markup Language][mdn-html]
 - MDN's [CSS: Cascading Stylesheets][mdn-css]
-- [HTML Cheatsheet][devhints-html] at <https://devhints.io>
-- [CSS Cheatsheet][devhints-css] at <https://devhints.io>
 - [HTMLReference.io][url-htmlreference]
 - [CSSReference.io][url-cssreference]
 
@@ -228,8 +226,6 @@ You should be able to create a copy of `basic-tags.html` called `basic-tags-styl
 [url-hische-tutorial]: http://www.dontfeartheinternet.com/
 [mdn-html]: https://developer.mozilla.org/en-US/docs/Web/HTML
 [mdn-css]: https://developer.mozilla.org/en-US/docs/Web/CSS
-[devhints-css]: https://devhints.io/html
-[devhints-css]: https://devhints.io/css
 [url-htmlreference]: https://htmlreference.io/
 [url-cssreference]: https://cssreference.io/
 [url-surge-sh]: http://surge.sh/
