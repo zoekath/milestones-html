@@ -1,14 +1,18 @@
 # HTML and CSS Milestones
 
-**Note**: This is still just a skeleton, will be filled out later, based on material I've compiled over the years.
+Below is a list of tasks. By the start of next week, everyone should...
+
+1. Understand what the task is asking
+1. Be able to do the task
+1. Write code that makes it clear you understand what's happening
+
+**FOR THE LOVE OF MONKEYS**, read the [Instructions](#instructions) first.
 
 ## Contents <!-- omit in toc -->
 
 - [Instructions](#Instructions)
 - [Demonstrations: Helpful and Unhelpful](#Demonstrations-Helpful-and-Unhelpful)
-  - [Helpful Demonstrations](#Helpful-Demonstrations)
-  - [Unhelpful Demonstrations](#Unhelpful-Demonstrations)
-- [Milestones](#Milestones)
+- [Resources](#Resources)
 - [Development Environment](#Development-Environment)
   - [Command Line](#Command-Line)
   - [Editing and Viewing](#Editing-and-Viewing)
@@ -21,22 +25,48 @@
   - [Tables](#Tables)
   - [Multimedia](#Multimedia)
 - [CSS](#CSS)
+  - [Common CSS Properties](#Common-CSS-Properties)
   - [Identifying CSS](#Identifying-CSS)
   - [Styling A Page](#Styling-A-Page)
-  - [Semantic HTML and Logical Structure](#Semantic-HTML-and-Logical-Structure)
-  - [Common Page Features and Layouts](#Common-Page-Features-and-Layouts)
-  - [Responsive Design](#Responsive-Design)
-  - [JavaScript in the Browser](#JavaScript-in-the-Browser)
 
 ## Instructions
 
+The snippets you write for each group of tasks can go in as many files as you'd like, but avoid putting everything in one giant file. It will make it hard for you to figure out what's going on.
+
+There's no particular format or requirement. This isn't an assignment. It's a study guide. You need to make it work for you. If you're spending time thinking about how ***we*** want it formatted then you're missing the point!
+
+We'll be sharing everyone's snippet after this is over, so write with that audience in mind. Be nice to your classmates. See the [Demonstrations](#demonstrations) section below for what helpful demonstrations look like.
+
+When you find a task you're not sure how to do, search for documentation, tutorials, guides, or anything else that might help you.
+
+If you copy code from somewhere else, include the URL in a comment.
+
 ## Demonstrations: Helpful and Unhelpful
 
-### Helpful Demonstrations
+The best demonstrations both *show* and *tell*. Every possible way someone can interact with your code will be useful.
 
-### Unhelpful Demonstrations
+That means...
 
-## Milestones
+1. When viewed in a browser, the page includes snippets of HTML
+1. When viewed in a browser, there is text describing the snippets
+1. When viewed in VS Code or via View Source, the HTML reflects what is being described
+
+## Resources
+
+Here are some tutorials/guides we like. You should **still look for other ones that you might like better**!
+
+1. Shay Howe's *[Learn to Code HTML & CSS][url-howe-tutorial]*
+1. Oliver James' [HTML & CSS Is Hard (But Doesn't Have To Be)][url-css-hard-tutorial]*
+1. Jessica Hische and Russ Maschmeyer's *[Don't Fear The Internet][url-hische-tutorial]*
+
+Here are some more reference-like resources. These might be slightly technical, but they're accurate and comprehensive. Learning to read technical reference material is its own (very valuable) skill.
+
+- MDN's [HTML: Hypertext Markup Language][mdn-html]
+- MDN's [CSS: Cascading Stylesheets][mdn-css]
+- [HTML Cheatsheet][devhints-html] at <https://devhints.io>
+- [CSS Cheatsheet][devhints-css] at <https://devhints.io>
+- [HTMLReference.io][url-htmlreference]
+- [CSSReference.io][url-cssreference]
 
 ## Development Environment
 
@@ -66,7 +96,6 @@ You should be able to...
 - [ ] Create a [CNAME][url-surge-sh-remember-domain] file each project so that surge doesn't generate a new, random domain every time you publish
 
 ## HTML Fundamentals
-
 
 ### Basic Structure
 
@@ -152,9 +181,30 @@ Create a page named `multimedia.html` in which you:
 
 ## CSS
 
+### Common CSS Properties
+
+You should be able to create a page called `basic-css.html` that demonstrates the following CSS properties by using a `<style>` tag to include the CSS:
+
+- `color`
+- `text-align`
+- `text-transformation`
+- `line-height`
+- `letter-spacing`
+- `font-family`
+- `font-size`
+- `font-style`
+- `font-weight`
+- `background-color`
+- `background-image`
+- `list-style-type`
+- `width` and `height` (using an `<img>` tag)
+- `margin`
+- `padding`
+- `border`
+
 ### Identifying CSS
 
-You should be able to create a page called `selectors.html` that demonstrates the following by using a `<style>` tag to include the CSS:
+Using `basic-css.html`, you should be able to demonstrate the following by using a `<style>` tag to include the CSS:
 
 - [ ] Selectors...
   - [ ] Type / tag selectors
@@ -173,33 +223,15 @@ You should be able to create a copy of `basic-tags.html` called `basic-tags-styl
 1. Change the text color of the `<h2>` header in the first section using an id selector, tag selector, and child combinator
 1. Add borders to some (but not all) of the sections. Consider giving the sections you want to have borders the same `class` attribute and then using a class selector.
 
-### Semantic HTML and Logical Structure
-
-The browser has no opinion about the *meaning* of your HTML document. Why is the HTML document organized one way versus another? What do your choice of tags and class/ID names represent? Are there conventions you're following?
-
-To the browser, an HTML document consists of a bunch of nested elements. Some of those elements have a default style, but virtually every aspect can be changed via CSS. Using CSS, you can make every `<p>` tag look and act like an `<h1>` tag, if you want.
-
-These *semantics* are important for the author and any other people who want to make sense of the HTML document down the road, including the author's future self.
-
-### Common Page Features and Layouts
-
-- [ ] Header
-- [ ] Footer
-- [ ] 2-Column Layout
-- [ ] 3-Column Layout
-- [ ] Grid
-
-### Responsive Design
-
-### JavaScript in the Browser
-
-- [ ] Listening to events
-- [ ] DOM Nodes
-  - [ ] **C**reate
-  - [ ] **R**ead
-  - [ ] **U**pdate
-  - [ ] **D**estroy
-
+[url-howe-tutorial]: https://learn.shayhowe.com/
+[url-css-hard-tutorial]: https://www.internetingishard.com/html-and-css/
+[url-hische-tutorial]: http://www.dontfeartheinternet.com/
+[mdn-html]: https://developer.mozilla.org/en-US/docs/Web/HTML
+[mdn-css]: https://developer.mozilla.org/en-US/docs/Web/CSS
+[devhints-css]: https://devhints.io/html
+[devhints-css]: https://devhints.io/css
+[url-htmlreference]: https://htmlreference.io/
+[url-cssreference]: https://cssreference.io/
 [url-surge-sh]: http://surge.sh/
 [url-surge-sh-remember-domain]: http://surge.sh/help/remembering-a-domain
 [url-w3-validator]: https://validator.w3.org/
