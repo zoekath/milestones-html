@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Basic Tags milestone</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <h1>This Page Provides a Small Insight into Basic HTML Tags</h1>
+
+  <section>
+    <h2>A &lt;p&gt;aragraph</h2>
+    <p>This is written inside a paragraph tag.</p>
+  </section>
+
+  <section>
+    <h2>The &lt;blockquote&gt; tag</h2>
+    <p>the following paragraph will be a blockquote tag. The blockqupte tag cites text from another source, and will, by default, indent the quote: </p>
+    <blockquote cite="https://www.bhg.com/recipes/how-to/bake/how-to-make-pretzels/"> Shape the Pretzels: To start your pretzel shape, divide the pretzel dough into eight equal portions. Moving your hands from one end to the other for evenness, roll each dough portion into a 30-inch rope. Shape one pretzel dough rope into a U shape (you'll repeat this with each piece of dough). Overlap the two ends of your U. Twist the overlapped ends once. (Work quickly to prevent dough from drying out.) The final step to making the pretzel shape is simply to fold the twisted dough ends down to the bottom of your U shape. Leave some overhang of the ends to create a traditional pretzel look on your homemade pretzels.</blockquote>
+  </section>
+
+  <section>
+    <h2>The &lt;pre&gt;formatted tag</h2>
+    <pre>
+      When you write something inside a &lt;pre&gt;formatted tag the text will be displayed in this font.
+      Here, in contrast to other elements,
+      line breaks, s  p  a  c  e  s    and
+                                            indents are given weight inside the html code.
+      This means that the text will be fixed and will inevitably assume the same form you give it inside of your html page.
+    </pre>
+  </section>
+
+  <section>
+    <h2>The &lt;em&gt;, &lt;i&gt;, &lt;strong&gt;, &lt;b&gt;, and &lt;code&gt; tag</h2>
+    <p>All the above listed tags are in-line tags. In contrast to block elements (such as the &lt;em&gt; &lt;p&gt; and &lt;blockquote&gt; tags), in-line elemenst do <em>not</em> start a new line, and take <em>only as much space as their value</em>. In-line tags are used within another tag such as this paragraph tag. </p>
+    <p>By putting the &lt;em&gt; tag around text, it is <em>emphasized</em>.</p>
+    <p>The &lt;i&gt; tag is used anytime you want to <i>italicize</i> text.</p>
+    <p>The &lt;strong&gt; tag emphasizes text by displaying it as <strong>bold</strong>.</p>
+    <p>The &lt;b&gt; tag on the other hand simply displays the text as <b>bold</b>. </p>
+    <p>Hold on, the &lt;em&gt; and &lt;i&gt; tags look exactly the same?? And so do the &lt;strong&gt; and &lt;b&gt; tags? What's the difference? <br>
+    The difference between them is the emphasis! This might not be important for the majority of us, but for the program and for people with special need such as people with visual impariment the difference is monumental. Both the &lt;i&gt; and the &lt;b&gt; tag change the text purely for the purpose of <b>style</b>. The tags &lt;em&gt; and &lt;strong&gt; on the other hand change the style of the text as well as putting an <strong>emphasis</strong> on it. This makes a difference for e.g. programs that read the text out to people, and emphasize the sounds of the text within the &lt;em&gt; and &lt;strong&gt; tags . Then the person listening - without having to see the text - knows which part of the text to give importance to.</p>
+    <p>The <code>&lt;code&gt;</code> element shows that an inline code element has been added. If you want to add code in the same way as it is displayed in your html file, use a &lt;pre&gt; tag to wrap the <code>&lt;code&gt;</code> tag inside. The &lt;code&gt; tag would have been useful to me in the previous lines where I used encoded smaller/greater-than signs (like this: &lt; &gt;) in order to display tags. I could have just used the <code>&lt;code&gt;</code> tag to make them look more like actual code. </p>
+  </section>
+
+  <section>
+    <h2>Lists and more Lists:</h2>
+    <h3>The unordered list (<code>&lt;ul&gt;</code>): </h3>
+    <ul>
+      <li>In order to display an unordered list (one with just dots in front), you have to first create a <code>&lt;ul&gt;</code> tag</li>
+      <li>This <code>&lt;ul&gt;</code> tag requires an opening and a closing tag</li>
+      <li>Within that tag, you should wrap each item in a <code>&lt;li&gt;</code> tag.</li>
+      <li>each content of a single <code>&lt;ul&gt;</code>tag will be displayed as a separate list item</li>
+      <ul>
+        <li>You can also make lists inside lists by nesting an unordered list inside another unordered list</li>
+        <li>How? you may ask</li>
+        <li>You simply have to create another <code>&lt;ul&gt;</code> tag within your first <code>&lt;ul&gt;</code> tag</li>
+        <li>Then, again, you wrap each item in a different <code>&lt;li&gt;</code> tag</li>
+      </ul>
+      <li>And voilà you have made a list inside a lits! </li>
+    </ul>
+
+    <h3>The ordered list (<code>&lt;ol&gt;</code>)</h3>
+    <ol>
+      <li>The ordered list, although ordered in terms of numbering each list item, is not very different from the unordered list</li>
+      <li>To start an ordered list, create a <code>&lt;ol&gt;</code> tag and place your <code>&lt;li&gt;</code> tags inside</li>
+      <ol>
+        <li>Again, you may create a list within a list by adding another <code>&lt;ol&gt;</code> tag inside your first <code>&lt;ol&gt;</code> tag</li>
+      </ol
+      ><li>Boom, another list is done!</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Lists again:</h2>
+    <ul>
+      <li>purely for demonstrative purposes I will now add other tags inside both ordered and unordered lists</li>
+      <li><p>Here you can see how a paragraph might be used in an unordered list tag<br>
+      Today I am feeling like I am getting the hang of how html and css work together but I still have a long way to go in understanding the logic of javascript.</p></li>
+      <li><img src="https://media.tenor.com/images/1dea93cc2adf7e31e6185cf28b91a8c7/tenor.gif" alt="confused gif" height="100px"> <br>
+          <ul><li><p>Here I added a simple gif to demonstrate my confusion about javasript. You should always include the attribute alt="" to display text describing the image in case the image does not show up on the browser.</p></li>
+          </li></ul>
+      <li>I think that is enough for this list.</li>
+    </ul>
+
+    <ol>
+      <li>Let's start another ordered list! Yay!</li>
+      <li><a href="https://www.wikihow.com/Make-a-To-Do-List" target="_blank">Learn how to create your own To Do List here!</a></li>
+      <li>Just another video on how to organize your lists</li>
+      <li><iframe height="200" src="https://www.youtube.com/embed/ibGnjSKLqTc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Oh No! Here Go the Tables:</h2>
+    <p>In the <code>&lt;table&gt;</code>tag, ther are several other elements we need to be careful about.<br>
+       The <code>&lt;table&gt;</code>tag simply defines an html table. <br>
+       the <code>&lt;th&gt;</code> tag defines a table header <br>
+       the <code>&lt;tr&gt;</code> tag defines a table row <br>
+       the <code>&lt;td&gt;</code> tag defines a table cell <br>
+       the <code>&lt;caption&gt;</code> tag creates a caption for the table<br>
+       the colspan="#" and rowspan="#" attribute let one cell span over two or more columns and rows <br>
+       Let's do this!
+      </p>
+
+    <table style="border: solid 1px;">
+      <caption>The first ever Table</caption>
+      <tr style="border: solid 1px;">
+        <th colspan="2" style="border: solid 1px;">The first and second column</th>
+        <th style="border: solid 1px;">The third column</th>
+      </tr>
+      <tr style="border: solid 1px;">
+        <td rowspan="2" style="border: solid 1px;">1st and 4th cell</td>
+        <td style="border: solid 1px;">2nd cell</td>
+        <td style="border: solid 1px;">3rd cell</td>
+      </tr>
+      <tr style="border: solid 1px;">
+        <td style="border: solid 1px;">5th cell</td>
+        <td style="border: solid 1px;">6th cell</td>
+      </tr>
+    </table>
+    <p>In the table above, I did not use CSS but I styled each element with an individual border, this is very time consuming and should rather be done through CSS (would also be easier to change). I would also have to add border collapse in CSS so that there is only one border.</p>
+
+    <table>
+      <tr>
+        <th>This</th>
+        <th>Is</th>
+        <th>How</th>
+        <th>A   </th>
+        <th>Table</th>
+      </tr>
+      <tr>
+        <td>Looks</td>
+        <td>Like</td>
+        <td>When</td>
+        <td>You</td>
+        <td>Don't</td>
+      </tr>
+      <tr>
+        <td>Add</td>
+        <td>Borders</td>
+        <td>Margin</td>
+        <td>Or</td>
+        <td>Padding</td>
+      </tr>
+    </table>
+
+    <table>
+      <tr>
+        <th>Just one</th>
+        <th>Small Table</th>
+      </tr>
+      <tr>
+        <td>Dogs</td>
+        <td>Cats</td>
+      </tr>
+      <tr>
+        <td>Cats</td>
+        <td>Cats</td>
+      </tr>
+      <tr>
+        <td>Cats</td>
+        <td>Dogs</td>
+      </tr>
+      <tr>
+        <td>Dogs</td>
+        <td>Dogs</td>
+      </tr>
+    </table>
+
+  </section>
+
+</body>
+
+</html>
