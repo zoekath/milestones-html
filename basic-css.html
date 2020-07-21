@@ -7,18 +7,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <style>
+  /* the body style regulates the font-family etc for the entire body, will be overridden by more specific code (e.g. tag/class/id selectors), margin on the left to separate it from the left screen border*/
       body{
         font-family:'Courgette', cursive;
         font-size: 15px;
         margin-left: 15px;
       }
-
-      h2 {
+/*This is a descendant selector*/
+      div h2 {
         background-color: rgba(151, 144, 144, 0.637);
         border: 2px solid rgb(87, 84, 84);
         padding-left: 5px;
       }
-
+/*this is a tag selector*/
       a {
         color: white;
         padding: 10px;
@@ -27,13 +28,17 @@
       a:hover{
         color: red;
       }
-
-      .videoLink{
+/*I specified the video link with an id because it would have been white and not visible, also took off the underline text-decoration*/
+      #videoLink{
         color: black;
         text-decoration: none;
         font-weight: bold;
         letter-spacing: 4px;
         font-style: italic;
+      }
+
+      #videoLink:hover{
+        color: rgb(230, 11, 11);
       }
 
       .navigationBar{
@@ -52,14 +57,14 @@
         margin-bottom: 40px;
         text-align: center;
       }
-
-      .backgroundheader{
+/*this is a descendant combinator*/
+      .background h2{
         color: rgb(177, 85, 136);
         text-transform: uppercase;
         background-color: rgba(151, 144, 144, 0.637);
       }
-
-      .backgroundP{
+/*this one too*/
+      .background p{
         color: rgb(226, 94, 193);
         text-align: justify;
         text-transform: capitalize;
@@ -81,6 +86,10 @@
 
       @keyframes shadoww {
         50% {text-shadow: 3px 5px 50px  rgba(155, 146, 153, 0.849)}
+      }
+/*This is a child combinator (only affects direct descendants aka children of the div/element, so not the items inside the section(FunLiItem) that's inside another ul(listIngredients))*/
+      .listIngredients > li {
+         letter-spacing: 5px;
       }
 
       .list1 {
@@ -128,6 +137,7 @@
         list-style-type: circle;
       }
 
+/*the letter spacing was intriguing, more than 3px looked weird though (I only added that for the video link to destacar it)*/
       .instructions{
         letter-spacing: 2px;
       }
@@ -141,7 +151,8 @@
     </style>
 
 </head>
-
+<!--here I added padding, a background image, hover colour, -->
+<!--added link style via tag selector-->
 <body>
   <div class="navigationBar">
     <a href="hereGoesTheLinkToTheHomePage">Home</a>
@@ -150,16 +161,20 @@
     <a></a>
   </div>
 
-  <h1 class="mainHeader">How To Make Proper German Brezn (aka pretzel)</h1>
+  <h1 class="mainHeader">How To Make Proper German Brezn (aka pretzels)</h1>
 
+<!--I classified everything but in the style part of the header I used descendant selectors (background h2/p) to style the header and paragraph-->
+<!--Added background colour for every h2 via descendant combinator-->
 <div class="background">
   <h2 class="backgroundheader">Background</h2>
-  <p class="backgroundP"> The German word "Brezel" (Bavarian: Brezen) is the modern name for the baked pastry "prezzitella" (old-high-German) which was first created in the 15th century in the area of modern day Germany.
+  <div class="backgrounddiv"><p class="backgroundP"> The German word "Brezel" (Bavarian: Brezen) is the modern name for the baked pastry "prezzitella" (old-high-German) which was first created in the 15th century in the area of modern day Germany.
     The word "prezzitella" was derived from the latin word "bracchiatello", the diminuitive of "brachia" - in English: arms. The name of Brezen was derived from the word "brachia" as the pastry resembles arms crossed in front of the chest.
-    There are so many different legends around the creation of the famous pastry that it might be interesting for you to do some research and decide which one you personally find most convincing.</p>
+    There are so many different legends around the creation of the famous pastry that it might be interesting for you to do some research and decide which one you personally find most convincing.</p></div>
 </div>
 
-  <div class="ingredients">
+<!-- I added different unordered list bullet point styles (each class has a different style, look in the style section), I added text-shadow and an animation weil das lustig aussah (look at @keyframes in the style section)-->
+<!--I added a ul(FunLiItems) to demonstrate how child/descendant combinators work-->
+<div class="ingredients">
     <h2>Ingredients:</h2>
     <img class="image" src="https://www.welt.de/img/wirtschaft/mobile135066735/8282505357-ci102l-w1024/Brezen-beim-Baecker.jpg" alt="Bavarian Brezn">
     <ul class="listIngredients">
@@ -167,6 +182,7 @@
       <li class="list2">1 pack of yeast (dry yeast)</li>
       <li class="list3">1/4 teaspoon of sugar</li>
       <li class="list4">350 ml of milk, lukewarm</li>
+          <ul class="FunLiItem"> <li> A smile and a positive mindset</li></ul>
       <li class="list5">Salt (table salt)</li>
       <li class="list6">1 1/2 litres of water</li>
       <li class="list7">2 teaspoon of baking soda</li>
@@ -182,7 +198,7 @@
       Roll out the dough (thin, about 20cm long) and cut it into 10-12 pieces.
       Roll or twist each piece, making strands, and shape them into pretzels (make sure the space between the dough is big enough as the dough will double in size and the shape would be lost). </p>
 
-      <p> Here is a link to a short video on:<a class="videoLink" target="_blank" href="https://www.youtube.com/watch?v=XCtGEkl6Ljs">how to shape Brezen.</a></p>
+      <p> Here is a link to a short video on:<a id="videoLink" target="_blank" href="https://www.youtube.com/watch?v=XCtGEkl6Ljs">how to shape Brezen.</a></p>
 
     <p>In a pot, boil 1.5 litres of water with 2 tablespoons of baking soda and let it boil for about 10 min.
       After that, add one pretzel for about 20-30 sec. (while it is inside the water, make sure it stays submerged).

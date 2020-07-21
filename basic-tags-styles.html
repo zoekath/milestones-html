@@ -4,74 +4,25 @@
   <title>Basic Tags milestone</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
-
-  <style>
-
-      body{
-        background-image: url(http://images.all-free-download.com/images/graphicthumb/background_texture_pastel_269334.jpg);
-        background-size: cover;
-        font-size: large;
-      }
-
-      .headers{
-        color: orange;
-      }
-
-      /*#firsth2{
-        color: rgb(231, 116, 21);
-      }*/
-
-      .section1 > h2{
-        color: rgb(148, 11, 11);
-      }
-
-      .section1, .section3, .section7, .section9, .section11, .section13{
-        color: orange;
-      }
-
-      #emphasis{
-        border: solid 3px rgb(9, 9, 112);
-        /*border-radius: 10%;*/
-        padding: 3%;
-      }
-
-      #orderedLists2{
-        border: 3px solid #ffa500;
-        color: black;
-        max-width: 400px;
-      }
-
-      #table2{
-        border: solid 4px orangered;
-        padding: 2%;
-      }
-
-      .section13{
-        border: solid 30px black;
-        border-radius: 40%;
-        margin-top: 30px;
-        padding: 4%;
-        max-width: fit-content;
-      }
-
-  </style>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+i
 </head>
 
 <body>
   <h1>This Page Provides a Small Insight into Basic HTML Tags</h1>
 
-  <section class="section1" id="paragraph">
-    <h2 class="headers" id="firsth2">A &lt;p&gt;aragraph</h2>
+  <section>
+    <h2>A &lt;p&gt;aragraph</h2>
     <p>This is written inside a paragraph tag.</p>
   </section>
 
-  <section id="block">
+  <section>
     <h2>The &lt;blockquote&gt; tag</h2>
     <p>the following paragraph will be a blockquote tag. The blockqupte tag cites text from another source, and will, by default, indent the quote: </p>
     <blockquote cite="https://www.bhg.com/recipes/how-to/bake/how-to-make-pretzels/"> Shape the Pretzels: To start your pretzel shape, divide the pretzel dough into eight equal portions. Moving your hands from one end to the other for evenness, roll each dough portion into a 30-inch rope. Shape one pretzel dough rope into a U shape (you'll repeat this with each piece of dough). Overlap the two ends of your U. Twist the overlapped ends once. (Work quickly to prevent dough from drying out.) The final step to making the pretzel shape is simply to fold the twisted dough ends down to the bottom of your U shape. Leave some overhang of the ends to create a traditional pretzel look on your homemade pretzels.</blockquote>
   </section>
 
-  <section class="section2" id="formatting">
+  <section>
     <h2>The &lt;pre&gt;formatted tag</h2>
     <pre>
       When you write something inside a &lt;pre&gt;formatted tag the text will be displayed in this font.
@@ -82,7 +33,7 @@
     </pre>
   </section>
 
-  <section class="section3" id="emphasis">
+  <section>
     <h2>The &lt;em&gt;, &lt;i&gt;, &lt;strong&gt;, &lt;b&gt;, and &lt;code&gt; tag</h2>
     <p>All the above listed tags are in-line tags. In contrast to block elements (such as the &lt;em&gt; &lt;p&gt; and &lt;blockquote&gt; tags), in-line elemenst do <em>not</em> start a new line, and take <em>only as much space as their value</em>. In-line tags are used within another tag such as this paragraph tag. </p>
     <p>By putting the &lt;em&gt; tag around text, it is <em>emphasized</em>.</p>
@@ -94,26 +45,23 @@
     <p>The <code>&lt;code&gt;</code> element shows that an inline code element has been added. If you want to add code in the same way as it is displayed in your html file, use a &lt;pre&gt; tag to wrap the <code>&lt;code&gt;</code> tag inside. The &lt;code&gt; tag would have been useful to me in the previous lines where I used encoded smaller/greater-than signs (like this: &lt; &gt;) in order to display tags. I could have just used the <code>&lt;code&gt;</code> tag to make them look more like actual code. </p>
   </section>
 
-  <section class="section4" id="lists1">
+  <section>
     <h2>Lists and more Lists:</h2>
-    <section class="section5" id="unorderedLists">
-      <h3>The unordered list (<code>&lt;ul&gt;</code>): </h3>
+    <h3>The unordered list (<code>&lt;ul&gt;</code>): </h3>
+    <ul>
+      <li>In order to display an unordered list (one with just dots in front), you have to first create a <code>&lt;ul&gt;</code> tag</li>
+      <li>This <code>&lt;ul&gt;</code> tag requires an opening and a closing tag</li>
+      <li>Within that tag, you should wrap each item in a <code>&lt;li&gt;</code> tag.</li>
+      <li>each content of a single <code>&lt;ul&gt;</code>tag will be displayed as a separate list item</li>
       <ul>
-        <li>In order to display an unordered list (one with just dots in front), you have to first create a <code>&lt;ul&gt;</code> tag</li>
-        <li>This <code>&lt;ul&gt;</code> tag requires an opening and a closing tag</li>
-       <li>Within that tag, you should wrap each item in a <code>&lt;li&gt;</code> tag.</li>
-        <li>each content of a single <code>&lt;ul&gt;</code>tag will be displayed as a separate list item</li>
-      <ul>
-        <!--ASK WHY VALIDATOR SAYS YOU CANNOT DO THIS-->
         <li>You can also make lists inside lists by nesting an unordered list inside another unordered list</li>
         <li>How? you may ask</li>
         <li>You simply have to create another <code>&lt;ul&gt;</code> tag within your first <code>&lt;ul&gt;</code> tag</li>
         <li>Then, again, you wrap each item in a different <code>&lt;li&gt;</code> tag</li>
       </ul>
       <li>And voilà you have made a list inside a lits! </li>
-    </ul></section>
+    </ul>
 
-    <section class="section6" id="orderedLists">
     <h3>The ordered list (<code>&lt;ol&gt;</code>)</h3>
     <ol>
       <li>The ordered list, although ordered in terms of numbering each list item, is not very different from the unordered list</li>
@@ -122,31 +70,30 @@
         <li>Again, you may create a list within a list by adding another <code>&lt;ol&gt;</code> tag inside your first <code>&lt;ol&gt;</code> tag</li>
       </ol
       ><li>Boom, another list is done!</li>
-    </ol></section>
+    </ol>
   </section>
 
-  <section class="section7" id="lists2">
+  <section>
     <h2>Lists again:</h2>
-    <section class="section8" id="unorderedLists2"><ul>
+    <ul>
       <li>purely for demonstrative purposes I will now add other tags inside both ordered and unordered lists</li>
       <li><p>Here you can see how a paragraph might be used in an unordered list tag<br>
       Today I am feeling like I am getting the hang of how html and css work together but I still have a long way to go in understanding the logic of javascript.</p></li>
-      <li><img src="https://media.tenor.com/images/1dea93cc2adf7e31e6185cf28b91a8c7/tenor.gif" alt="confused gif" height="100"> <br>
+      <li><img src="https://media.tenor.com/images/1dea93cc2adf7e31e6185cf28b91a8c7/tenor.gif" alt="confused gif" height="100px"> <br>
           <ul><li><p>Here I added a simple gif to demonstrate my confusion about javasript. You should always include the attribute alt="" to display text describing the image in case the image does not show up on the browser.</p></li>
-          </ul>
+          </li></ul>
       <li>I think that is enough for this list.</li>
-    </ul></section>
+    </ul>
 
-    <section class="section9" id="orderedLists2">
     <ol>
       <li>Let's start another ordered list! Yay!</li>
       <li><a href="https://www.wikihow.com/Make-a-To-Do-List" target="_blank">Learn how to create your own To Do List here!</a></li>
       <li>Just another video on how to organize your lists</li>
-      <li><iframe height="200" src="https://www.youtube.com/embed/ibGnjSKLqTc"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
-    </ol></section>
+      <li><iframe height="200" src="https://www.youtube.com/embed/ibGnjSKLqTc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+    </ol>
   </section>
 
-  <section class="section10" id="tables">
+  <section>
     <h2>Oh No! Here Go the Tables:</h2>
     <p>In the <code>&lt;table&gt;</code>tag, ther are several other elements we need to be careful about.<br>
        The <code>&lt;table&gt;</code>tag simply defines an html table. <br>
@@ -158,7 +105,6 @@
        Let's do this!
       </p>
 
-<section class="section11" id="table1">
     <table style="border: solid 1px;">
       <caption>The first ever Table</caption>
       <tr style="border: solid 1px;">
@@ -176,9 +122,7 @@
       </tr>
     </table>
     <p>In the table above, I did not use CSS but I styled each element with an individual border, this is very time consuming and should rather be done through CSS (would also be easier to change). I would also have to add border collapse in CSS so that there is only one border.</p>
-  </section>
 
-  <section class="section12" id="table2">
     <table>
       <tr>
         <th>This</th>
@@ -201,9 +145,8 @@
         <td>Or</td>
         <td>Padding</td>
       </tr>
-    </table></section>
+    </table>
 
-    <section class="section13" id="table3">
     <table>
       <tr>
         <th>Just one</th>
@@ -225,7 +168,7 @@
         <td>Dogs</td>
         <td>Dogs</td>
       </tr>
-    </table></section>
+    </table>
 
   </section>
 
