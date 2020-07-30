@@ -41,7 +41,33 @@
         color: rgb(230, 11, 11);
       }
 
-      .navigationBar{
+
+      .topnav{
+        background-color: black;
+        background-image: url(http://www.photohdx.com/images/2016/04/purple-vintage-fabric-texture-background.jpg);
+        background-size: cover;
+        padding: 15px;
+        text-align: center;
+      }
+
+      .topnav a{
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-bottom: 50px;
+      }
+
+      .topnav a:hover{
+        background-color: white;
+        color: black;
+        font-weight: bold;
+      }
+
+      /* .navigationBar{
         background: rgba(0, 0, 0, 0.658);
         background-image: url(http://www.photohdx.com/images/2016/04/purple-vintage-fabric-texture-background.jpg);
         background-size: cover;
@@ -50,7 +76,7 @@
         text-align: center;
         margin-bottom: 50px;
         padding: 10px;
-      }
+      } */
 
       .mainHeader{
         font-family: 'Dancing Script', cursive;
@@ -154,11 +180,15 @@
 <!--here I added padding, a background image, hover colour, -->
 <!--added link style via tag selector-->
 <body>
-  <div class="navigationBar">
-    <a href="hereGoesTheLinkToTheHomePage">Home</a>
-    <a href="hereGoesTheLinkToHTMLPage1">Page 1</a>
-    <a href="hereGoesTheLinkToHTMLPage2">Page2</a>
-    <a></a>
+
+  <div class="topnav">
+    <a href="index.html" class="">Home</a>
+    <a href="multimedia.html" class="">Multimedia</a>
+    <a href="snippet.html" class="">Snippet</a>
+    <a href="structure.html" class="">Structure</a>
+    <a href="basic-css.html" class="">Basic CSS</a>
+    <a href="basic-tags.html" class="">Basic Tags</a>
+    <a href="basic-tags-styles.html" class="">Tag Styles </a>
   </div>
 
   <h1 class="mainHeader">How To Make Proper German Brezn (aka pretzels)</h1>

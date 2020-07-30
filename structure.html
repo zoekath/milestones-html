@@ -3,9 +3,50 @@
 
 <head>
   <title>My awesomely structured html page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <style>
+      body{
+      background-color: rgb(184, 211, 208);
+    }
+
+    .topnav{
+      background-color: black;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .topnav a{
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      padding-right: 10px;
+      padding-left: 10px;
+      margin-bottom: 50px;
+    }
+
+    .topnav a:hover{
+      background-color: white;
+      color: black;
+      font-weight: bold;
+    }
+  </style>
 </head>
 
 <body>
+
+  <div class="topnav">
+    <a href="index.html" class="">Home</a>
+    <a href="multimedia.html" class="">Multimedia</a>
+    <a href="snippet.html" class="">Snippet</a>
+    <a href="structure.html" class="">Structure</a>
+    <a href="basic-css.html" class="">Basic CSS</a>
+    <a href="basic-tags.html" class="">Basic Tags</a>
+    <a href="basic-tags-styles.html" class="">Basic Tags with CSS</a>
+  </div>
+
   <h1>Using the h1 header tag makes this header the most important of them all </h1>
     <p>This was written in a &lt;p&gt; or paragraph tag. This means that whatever is written within this tag will be displayed in a paragaph block. </p>
     <p>Here I used a separate &lt;p&gt; tag in order to demonstrate to which position and style (font, font-size, padding, margin etc.) this tag defaults.</p>
