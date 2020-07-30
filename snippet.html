@@ -7,17 +7,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <style>
-      body{
+    body {
       background-color: rgb(184, 211, 208);
     }
 
-    .topnav{
+    .topnav {
       background-color: black;
       padding: 15px;
       text-align: center;
     }
 
-    .topnav a{
+    .topnav a {
       text-decoration: none;
       color: white;
       font-weight: bold;
@@ -28,7 +28,7 @@
       margin-bottom: 50px;
     }
 
-    .topnav a:hover{
+    .topnav a:hover {
       background-color: white;
       color: black;
       font-weight: bold;
@@ -48,36 +48,57 @@
   </div>
 
   <h2>Here you can see a snippet of code:</h2>
-  <img src="snippet.jpg.png">
+  <img src="snippet.jpg.png"> <!-- Don't forget to add the alt attribute to your image tag.  Also how did you get a jpg.png file?  Usually its one or the other -->
 
   <h2>Here is how that same code looks like on a website:</h2>
-    <p>
-      Want to search the web?
-      Try <a href="https://google.com" id="the-best-link" class="banana"  target="_blank">Google</a>!
-    </p>
+  <p>
+    Want to search the web?
+    Try <a href="https://google.com" id="the-best-link" class="banana" target="_blank">Google</a>!
+  </p>
 
   <h3>Let's anaylze what is happening in this code:</h3>
-    <h4>The &lt;p&gt; tag, nesting:</h4>
-    <p>Within this snippet we can see that the &lt;p&gt;/paragraph tag was used. The &lt;p&gt; tag requires an opening (&lt;p&gt;) and closing (&lt;/p&gt;) tag.
-       That is because in between those two tags, one can insert values such as text, numbers, other elements and other tags.
-       The value within the &lt;p&gt; tags is then displayed as a paragraph block just like the text you are reading now.
-       This is also called "nesting". Nesting proposes the idea that each element of code (such as the &lt;p&gt; tag) are boxes that hold content. In this case the content is what is being written right now.
-       At the same time, as part of the content of those boxes, one can place another box such as the &lt;a&gt; tag in our snippet above. Here we basically nested a box inside another box. We could say that the &lt;a&gt; tag is the child of the &lt;p&gt; tag.
-       This child box can hold content istself, such as the link to the Google homepage above.</p>
-    <p>Learn more about the &lt;p&gt; tag <a href="https://www.w3schools.com/tags/tag_p.asp" target="_blank">here.</a> <br>
-       Still confused about nesting? Click <a href="https://www.lifewire.com/nesting-html-tags-3466475" target="_blank">here</a> to find out more.</p>
-    <h4>The &lt;a&gt; tag, attributes:</h4>
-    <p>Inside the &lt;p&gt; tags of the snippet, you can see that textual values ("Want to search the web? Try"), and other elements/tags (&lt;a&gt; tag) were added. The &lt;a&gt;/hyperlink tag creates a link that leads to another webpage.
-       In the opening &lt;a&gt; tag, one can add certain <span style="font-weight: bold;">attributes</span> which will change the value of the tag accordingly.
-       The attributes added to the snippet &lt;a&gt; tag are: href="",id="", class="", and target="".
-       The value of the href="" attribute is: https://google.com. In our &lt;a&gt; tag, the href="" attribute holds the URL to the webpage that you want your page to connect to - in our case the url to the Google home page. Wihout this attribute, your page will not be linked to another website. <br>
-       The class attribute and id attribute are closely related. Both attributes specifically classify elements in our code - here the link.
-       The value of the class="" attribute is: banana. The class attribute determines the class name (here: banana) of the element. Within a CSS style sheet, we can then target this element specifically and change its layout to our liking.
-       One page can have multiple elements under the same class. One element can also have mutliple classes. We could therefore classify this paragraph under the class="banana" and under the class="cherry" and thus style it either the same way as the snippet class (banana) or as the "cherry" class. <br>
-       The value of the id="" attribute is: the-best-link. The id attribute is more specific than the class attribute and thus overrides the class styling if an element has both a class and an id attribute. In our case, the styling of id="the-best-link" would override the styling of class="banana".
-       One element can only have one id, and the same id can only be used on one element within a page. <br>
-       The value of the target="" attribute is:_blank. This attribute determines the manner in which the link will be openend. Here, the value "_blank" determines that the link shall be openend in a new tab/window.</p>
-    <p>Learn more about the &lt;a&gt; tag <a href="https://www.w3schools.com/tags/tag_a.asp" target="_blank">here</a> <br>
-       What even are class and id attributes? Tell me <a href="https://css-tricks.com/the-difference-between-id-and-class/" target="_blank">more</a></p>
+  <h4>The &lt;p&gt; tag, nesting:</h4>
+  <p>Within this snippet we can see that the &lt;p&gt;/paragraph tag was used. The &lt;p&gt; tag requires an opening
+    (&lt;p&gt;) and closing (&lt;/p&gt;) tag.
+    That is because in between those two tags, one can insert values such as text, numbers, other elements and other
+    tags.
+    The value within the &lt;p&gt; tags is then displayed as a paragraph block just like the text you are reading now.
+    This is also called "nesting". Nesting proposes the idea that each element of code (such as the &lt;p&gt; tag) are
+    boxes that hold content. In this case the content is what is being written right now.
+    At the same time, as part of the content of those boxes, one can place another box such as the &lt;a&gt; tag in our
+    snippet above. Here we basically nested a box inside another box. We could say that the &lt;a&gt; tag is the child
+    of the &lt;p&gt; tag.
+    This child box can hold content istself, such as the link to the Google homepage above.</p>
+  <p>Learn more about the &lt;p&gt; tag <a href="https://www.w3schools.com/tags/tag_p.asp" target="_blank">here.</a>
+    <br>
+    Still confused about nesting? Click <a href="https://www.lifewire.com/nesting-html-tags-3466475"
+      target="_blank">here</a> to find out more.</p>
+  <h4>The &lt;a&gt; tag, attributes:</h4>
+  <p>Inside the &lt;p&gt; tags of the snippet, you can see that textual values ("Want to search the web? Try"), and
+    other elements/tags (&lt;a&gt; tag) were added. The &lt;a&gt;/hyperlink tag creates a link that leads to another
+    webpage.
+    In the opening &lt;a&gt; tag, one can add certain <span style="font-weight: bold;">attributes</span> which will
+    change the value of the tag accordingly.
+    The attributes added to the snippet &lt;a&gt; tag are: href="",id="", class="", and target="".
+    The value of the href="" attribute is: https://google.com. In our &lt;a&gt; tag, the href="" attribute holds the URL
+    to the webpage that you want your page to connect to - in our case the url to the Google home page. Wihout this
+    attribute, your page will not be linked to another website. <br>
+    The class attribute and id attribute are closely related. Both attributes specifically classify elements in our code
+    - here the link.
+    The value of the class="" attribute is: banana. The class attribute determines the class name (here: banana) of the
+    element. Within a CSS style sheet, we can then target this element specifically and change its layout to our liking.
+    One page can have multiple elements under the same class. One element can also have mutliple classes. We could
+    therefore classify this paragraph under the class="banana" and under the class="cherry" and thus style it either the
+    same way as the snippet class (banana) or as the "cherry" class. <br>
+    The value of the id="" attribute is: the-best-link. The id attribute is more specific than the class attribute and
+    thus overrides the class styling if an element has both a class and an id attribute. In our case, the styling of
+    id="the-best-link" would override the styling of class="banana".
+    One element can only have one id, and the same id can only be used on one element within a page. <br>
+    The value of the target="" attribute is:_blank. This attribute determines the manner in which the link will be
+    openend. Here, the value "_blank" determines that the link shall be openend in a new tab/window.</p>
+  <p>Learn more about the &lt;a&gt; tag <a href="https://www.w3schools.com/tags/tag_a.asp" target="_blank">here</a> <br>
+    What even are class and id attributes? Tell me <a href="https://css-tricks.com/the-difference-between-id-and-class/"
+      target="_blank">more</a></p>
 </body>
+
 </html>
